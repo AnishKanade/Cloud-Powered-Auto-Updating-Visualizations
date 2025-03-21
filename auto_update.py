@@ -4,9 +4,14 @@ import requests
 from datetime import datetime, timedelta
 import boto3
 import os
-
 # add your private api key
+
 ALPHA_VANTAGE_API_KEY = os.getenv('ALPHA_VANTAGE_API_KEY')
+AWS_SECRET_ACCESS_KEY = os.getenv("AWS_SECRET_ACCESS_KEY")
+s3 = boto3.resource('s3',
+    aws_access_key_id=AWS_ACCESS_KEY_ID,
+    aws_secret_access_key=AWS_SECRET_ACCESS_KEY
+)
 
 
 # List of bank tickers
