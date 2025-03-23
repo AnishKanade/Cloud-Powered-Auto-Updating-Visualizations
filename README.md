@@ -24,18 +24,18 @@ Cloud-Powered Auto-Updating Visualizations demonstrates how to create dynamic, a
 
 # Features:
 
-  Data Acquisition:
+  * Data Acquisition:
   Fetches 5-year historical daily stock prices for selected banks using the Twelve Data API.
 
-  Data Processing:
+  * Data Processing:
   Utilizes pandas to parse JSON data, filter it, and format it for visualization.
 
-  Data Visualization:
+  * Data Visualization:
   Creates beautiful visualizations with Matplotlib, including boxplots that highlight data distribution and trends.
 
-  Cloud Integration:
-    AWS S3: Automatically uploads the generated PNG files to an S3 bucket for public access.
-    AWS EC2: Schedules the script to run periodically using cron, ensuring the visualizations are always up-to-date.
+  * Cloud Integration:
+    * AWS S3: Automatically uploads the generated PNG files to an S3 bucket for public access.
+    * AWS EC2: Schedules the script to run periodically using cron, ensuring the visualizations are always up-to-date.
   
   Automation:
   The process is fully automated—from data fetching and visualization generation to cloud uploading and scheduling.
@@ -43,25 +43,25 @@ Cloud-Powered Auto-Updating Visualizations demonstrates how to create dynamic, a
 # Architecture:
 
 1. Data Layer:
-  Fetches data from Twelve Data API.
-  Processes data with Python and pandas.
+  * Fetches data from Twelve Data API.
+  * Processes data with Python and pandas.
 
 2. Visualization Layer:
-  Creates charts (boxplots) using Matplotlib.
-  Saves visualizations as PNG files.
+  * Creates charts (boxplots) using Matplotlib.
+  * Saves visualizations as PNG files.
 
 3. Cloud & Automation Layer:
-  Uses boto3 to upload PNG files to an AWS S3 bucket.
-  Deploys a Python script on an AWS EC2 instance, scheduled via cron to run periodically.
+  * Uses boto3 to upload PNG files to an AWS S3 bucket.
+  * Deploys a Python script on an AWS EC2 instance, scheduled via cron to run periodically.
 
 # Setup and Installation:
 
   Prerequisites:
-    Python 3.x
-    AWS Account (Free Tier eligible)
-    Twelve Data API Key (free tier available)
-    AWS CLI (configured with your credentials)
-    Git
+    * Python 3.x
+    * AWS Account (Free Tier eligible)
+    * Twelve Data API Key (free tier available)
+    * AWS CLI (configured with your credentials)
+    * Git
   
   Install Dependencies
     It's recommended to use a virtual environment:
@@ -84,10 +84,10 @@ Cloud-Powered Auto-Updating Visualizations demonstrates how to create dynamic, a
     python3 auto_update.py    
     
   This script will: 
-    Fetch and process stock data.
-    Generate a boxplot (or other visualizations) from the data.
-    Save the visualization as bank_data_boxplot.png.
-    Upload the image to your specified AWS S3 bucket.
+    * Fetch and process stock data.
+    * Generate a boxplot (or other visualizations) from the data.
+    * Save the visualization as bank_data_boxplot.png.
+    * Upload the image to your specified AWS S3 bucket.
     
 # AWS Integration:
   Uploading Visualizations to S3:
