@@ -1,0 +1,15 @@
+# Ignore virtual environments
+venv/
+.env
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore AWS credentials
+config.py
