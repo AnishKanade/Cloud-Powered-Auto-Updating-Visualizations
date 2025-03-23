@@ -9,14 +9,14 @@ The main branch contains documentation and project overviews, while the master b
 
 # Table of Contents:
 
-  Overview
-  Features
-  Architecture
-  Setup and Installation
-  Usage
-  AWS Integration
-  Uploading Visualizations to S3
-  Automating Updates with EC2 and Cron
+  * Overview
+  * Features
+  * Architecture
+  * Setup and Installation
+  * Usage
+  * AWS Integration
+    * Uploading Visualizations to S3
+    * Automating Updates with EC2 and Cron
 
 # Overview:
 
