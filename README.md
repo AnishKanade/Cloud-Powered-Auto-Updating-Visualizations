@@ -2,6 +2,11 @@
 
 Cloud-Powered Auto-Updating Visualizations is an automated financial data visualization tool that gathers historical stock data, processes it using Python and pandas, and creates insightful visualizations with Matplotlib. The project leverages cloud services—AWS S3 for file storage and AWS EC2 (with cron scheduling) for automation—to ensure that the visualizations are updated periodically without manual intervention.
 
+* Note:
+The main branch contains documentation and project overviews, while the master branch contains the full project code. To view the code, please run the following command:
+
+      git checkout master
+
 # Table of Contents:
 
   Overview
